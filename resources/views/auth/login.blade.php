@@ -13,7 +13,7 @@
 
                                 <div class="header header-primary text-center">
                                     <h4>Iniciar sesión</h4>
-                                    <div class="social-line">
+<!--                                    <div class="social-line">
                                         <a href="#pablo" class="btn btn-simple btn-just-icon">
                                             <i class="fa fa-facebook-square"></i>
                                         </a>
@@ -23,7 +23,7 @@
                                         <a href="#pablo" class="btn btn-simple btn-just-icon">
                                             <i class="fa fa-google-plus"></i>
                                         </a>
-                                    </div>
+                                    </div>-->
                                 </div>
                                 <p class="text-divider">Ingresa tus datos</p>
                                 <div class="content">
@@ -99,5 +99,5 @@
                 </div>
             </footer>
 
-        </div>
+</div>
 @endsection
