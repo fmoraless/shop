@@ -11,10 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
 
+Route::get('/', 'TestController@welcome');
 
 Route::get('/prueba', function(){
 	return 'Ruta de prueba';
