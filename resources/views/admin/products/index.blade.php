@@ -19,7 +19,7 @@
                 <div class="row">
                     
 
-
+                    <a href="{{ url('/admin/products/create') }}" class="btn btn-primary btn-round">Nuevo producto</a>
 <table class="table">
     <thead>
         <tr>
@@ -37,7 +37,7 @@
             <td class="text-center">{{ $product->id }}</td>
             <td>{{ $product->name }}</td>
             <td>{{ $product->description }}</td>
-            <td>{{ $product->category->name }}</td>
+            <td>{{ $product->category ? $product->category->name : 'General' }}</td>
             <td class="text-right">{{ $product->price }}</td>
             <td class="td-actions text-right">
                 <button type="button" rel="tooltip" title="Ver producto" class="btn btn-info btn-simple btn-xs">
@@ -54,6 +54,7 @@
         @endforeach
     </tbody>
 </table>
+                {{ $products->links() }}
 
                 </div>
             </div>
