@@ -210,4 +210,5 @@
             });
         });
     </script>
+@include('includes.footer')
 @endsection
