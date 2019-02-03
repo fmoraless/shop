@@ -32,4 +32,9 @@ Route::middleware(['auth', 'admin'])->group(function() {
     Route::get('/admin/products/{id}/edit', 'ProductController@edit'); //formulario edición
     Route::post('/admin/products/{id}/edit', 'ProductController@update'); //actualiar
     Route::delete('/admin/products/{id}', 'ProductController@destroy'); //formulario Eliminar
+
+    Route::get('/admin/products/{id}/images', 'ImageController@index'); //listado
+    Route::post('/admin/products/{id}/images', 'ImageController@store'); //registrar
+    Route::delete('/admin/products/{id}/images', 'ImageController@destroy'); //form eliminar
+
 });
